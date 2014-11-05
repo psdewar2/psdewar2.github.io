@@ -84,7 +84,7 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 200px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -172,6 +172,11 @@ hr.small {
 
 .services {
     padding: 50px 0;
+}
+
+.container {
+    float: none;
+    margin: 0 auto;
 }
 
 .service-item {

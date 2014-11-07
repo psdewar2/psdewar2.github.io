@@ -22,6 +22,13 @@ body {
     vertical-align: middle;
 }
 
+.text-vertical-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -84,7 +91,7 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 200px;
+    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -162,9 +169,9 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
+/* About, Skills, Work, Projects */
 
-.about {
+.about, .skills, .work, .projects {
     padding: 50px 0;
 }
 
@@ -172,11 +179,6 @@ hr.small {
 
 .services {
     padding: 50px 0;
-}
-
-.container {
-    float: none;
-    margin: 0 auto;
 }
 
 .service-item {
@@ -201,6 +203,10 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+}
+
+.work {
+    padding: 50px 0 0;
 }
 
 .portfolio-item {
@@ -242,3 +248,64 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+/* PSD navbar */
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.navbar-custom:hover {
+    display: block;
+}
+
+
+
+.navbar-custom .navbar-brand {
+
+    font-weight: 700;
+    color: #555;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #444;
+}
+
+.navbar-custom .nav li.active {
+    outline: nonte;
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+    outline: 0;
+    background-color: rgba(255,255,255);
+
+}
+
+.breathing-room {
+    padding-bottom: 50px;
+}
+

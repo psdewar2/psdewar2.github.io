@@ -97,64 +97,6 @@ hr.small {
     list-style: none;
 }
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
 /* Header */
 
 .header {
@@ -171,10 +113,14 @@ hr.small {
 
 /* About, Skills, Work, Projects */
 
-.about, .skills, .work, .projects {
+.about, .skills, .work, .projects, .music {
     padding: 50px 0;
 }
 
+.contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 /* Services */
 
 .services {
@@ -188,6 +134,18 @@ hr.small {
 /* Callout */
 
 .callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.callout-psd {
     display: table;
     width: 100%;
     height: 400px;
@@ -254,12 +212,6 @@ footer {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
 }
-
-.navbar-custom:hover {
-    display: block;
-}
-
-
 
 .navbar-custom .navbar-brand {
 

@@ -22,6 +22,13 @@ body {
     vertical-align: middle;
 }
 
+.text-vertical-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -84,68 +91,10 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 200px;
+    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
 }
 
 /* Header */
@@ -162,21 +111,20 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
+/* About, Skills, Work, Projects */
 
-.about {
+.about, .skills, .work, .projects, .music {
     padding: 50px 0;
 }
 
+.contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 /* Services */
 
 .services {
     padding: 50px 0;
-}
-
-.container {
-    float: none;
-    margin: 0 auto;
 }
 
 .service-item {
@@ -197,10 +145,26 @@ hr.small {
     -o-background-size: cover;
 }
 
+.callout-psd {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /* Portfolio */
 
 .portfolio {
     padding: 50px 0;
+}
+
+.work {
+    padding: 50px 0 0;
 }
 
 .portfolio-item {
@@ -242,3 +206,58 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+/* PSD navbar */
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.navbar-custom .navbar-brand {
+
+    font-weight: 700;
+    color: #555;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #444;
+}
+
+.navbar-custom .nav li.active {
+    outline: nonte;
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+    outline: 0;
+    background-color: rgba(255,255,255);
+
+}
+
+.breathing-room {
+    padding-bottom: 50px;
+}
+

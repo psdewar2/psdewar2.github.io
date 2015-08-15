@@ -16,6 +16,15 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*PSD edits*/
+.years {
+    font-size: 22px;
+}
+p strong {
+    color: #428bca;
+}
+/*********/
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -112,6 +121,11 @@ hr.small {
 }
 
 /* About, Skills, Work, Projects */
+.profile_pic {
+    max-width: 256px;
+    max-height: 256px;
+    padding-bottom: 25px;
+}
 
 .about, .skills, .work, .projects, .music {
     padding: 50px 0;
